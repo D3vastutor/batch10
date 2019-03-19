@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valueOne = parseInt(prompt('Input your 1st value'))
+        var valueTwo = parseInt(prompt('Input your 2st value'))
+
+        var math = prompt('select your calculator!')
+
+        if (math == 'tambah')
+        {
+            var hasil = valueOne + valueTwo
+            alert(hasil)
+        }
+        else if(math == 'kurang')
+        {
+            var hasil = valueOne - valueTwo
+            alert(hasil)
+        }
+        else if(math == 'kali')
+        {
+            var hasil = valueOne * valueTwo
+            alert(hasil)
+        }
+        else if(math == 'bagi')
+        {
+            var hasil = valueOne / valueTwo
+            alert(hasil)
+        }
+        else if(math == 'pangkat')
+        {
+            var hasil = Math.pow(valueOne, valueTwo)
+            alert(hasil)
+        }
+        else if(math == 'min')
+        {
+            var hasil = Math.min(valueOne, valueTwo)
+            alert(hasil)
+        }
+        else if(math == 'max')
+        {
+            var hasil = Math.max(valueOne, valueTwo)
+            alert(hasil)
+        }
+        else
+        {
+            alert('Isi yang benar, bung!')
+        }
+    </script>
+</body>
+</html>
