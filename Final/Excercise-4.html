@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1>My Pofile</h1>
+    <div class="container col-12">
+        <div class="row">
+            <!-- carousel -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner col-xl-6">
+                    <div class="carousel-item active" onclick="openMenu1()">
+                        <img src="https://cdn-img.health.com/sites/default/files/styles/master_4_3/public/migration/img/web/2012/06/slides/strawberries-400x400.jpg?itok=irtFEh70" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" onclick="openMenu2()">
+                        <img src="https://www.thespruce.com/thmb/vCI6_Uo1OUdWM1muaQWW8E-aw0s=/400x300/filters:no_upscale():max_bytes(150000):strip_icc()/blueberries-on-bush-557907681-588d2dc45f9b5874ee20b70d.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" onclick="openMenu3()">
+                        <img src="https://255ivlr1yz444ymir4dn9oq6-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/premier-fitness-solutions-raspberries.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+                <!-- Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    For Guest
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Address">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    
+            </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function openMenu(){
+            window.openMenu1('Halaman-1.html');
+            window.openMenu2('Halaman-2.html');
+            window.openMenu3('Halaman-3.html');
+        }
+    </script>
+</body>
+</html>
